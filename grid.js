@@ -10,7 +10,7 @@ class Cell {
 		stroke(0);
 		noFill();
 		rect(this.x, this.y, size, size);
-		textSize(80);
+		textSize(110);
 		fill(0);
 		textAlign(CENTER, CENTER);
 		if (this.status)

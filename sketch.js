@@ -1,9 +1,9 @@
-let size = 100;
+let size = 150;
 let board;
 let turn = "X";
 let game = true;
 function setup() {
-    let canvas = createCanvas(300, 300);
+    let canvas = createCanvas(450, 450);
     var x = (windowWidth - width) / 2;
 	var y = (windowHeight - height) / 2;
 	canvas.position(x, y);
@@ -49,7 +49,7 @@ function play() {
 	let state = getState();
     win = isWin(state);
     let resultP = createP('');
-    resultP.style('font-size', '32pt');
+    resultP.style('font-size', '4em');
     resultP.style('text-align', 'center');
 	if (win === "X") {
 		resultP.html(`You win!`);
